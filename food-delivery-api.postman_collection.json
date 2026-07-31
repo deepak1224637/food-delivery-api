@@ -18,48 +18,15 @@
           }
         ],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants"
           ]
         },
         "description": "StartFragment🧪 Test 1: Restaurants (No Login Required)EndFragment"
-      },
-      "response": []
-    },
-    {
-      "name": "New Request",
-      "request": {
-        "auth": {
-          "type": "noauth"
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "ngrok-skip-browser-warning",
-            "value": "true",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
-          "protocol": "https",
-          "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
-          ],
-          "path": [
-            "restaurants"
-          ]
-        },
-        "description": "🧪 Test 1: Restaurants (No Login Required)"
       },
       "response": []
     },
@@ -78,12 +45,9 @@
           }
         ],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants?cuisine=Chinese",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants?cuisine=Chinese",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants"
@@ -114,12 +78,9 @@
           }
         ],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants?minRating=4.3",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants?minRating=4.3",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants"
@@ -145,12 +106,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants?search=pizza",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants?search=pizza",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants"
@@ -159,8 +117,7 @@
             {
               "key": "search",
               "value": "pizza",
-              "description": "search pizza",
-              "type": "text"
+              "description": "search pizza"
             }
           ]
         },
@@ -177,12 +134,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/1",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants/1",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants",
@@ -202,12 +156,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/99",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants/99",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants",
@@ -227,12 +178,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/2/menu",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/restaurants/2/menu",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "restaurants",
@@ -268,12 +216,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/auth/register",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/auth/register",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "auth",
@@ -302,12 +247,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/auth/login",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/auth/login",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "auth",
@@ -342,12 +284,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/auth/register",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/auth/register",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "auth",
@@ -382,12 +321,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/auth/login",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/auth/login",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "auth",
@@ -422,12 +358,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/add",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -446,7 +379,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0oln}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -469,12 +402,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/add",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -534,7 +464,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0oln}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -551,12 +481,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/add",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -575,7 +502,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -598,12 +525,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/update",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/update",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -622,7 +546,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -655,7 +579,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -695,7 +619,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -712,12 +636,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/add",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -736,7 +657,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -753,12 +674,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders"
@@ -776,7 +694,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -784,12 +702,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart"
@@ -807,7 +722,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -815,12 +730,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders"
@@ -838,7 +750,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -846,12 +758,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders/1",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders",
@@ -870,7 +779,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -887,12 +796,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1/status",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders/1/status",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders",
@@ -912,7 +818,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -929,12 +835,9 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1/status",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders/1/status",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders",
@@ -954,7 +857,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0pr1}}",
+              "value": "{{auth_secret_0g9o}}",
               "type": "string"
             }
           ]
@@ -962,12 +865,9 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders/999",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders/999",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders",
@@ -997,6 +897,61 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "restaurants"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/restaurants?cuisine=Chinese",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "restaurants"
+          ],
+          "query": [
+            {
+              "key": "cuisine",
+              "value": "Chinese"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "variable": [
@@ -1022,6 +977,10 @@
     },
     {
       "key": "auth_secret_0pr1",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0g9o",
       "secret": true
     }
   ]
