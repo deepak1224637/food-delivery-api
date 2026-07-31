@@ -47,5 +47,17 @@
       { "itemId": 402, "name": "Idli Sambar", "price": 90, "veg": true },
       { "itemId": 403, "name": "Filter Coffee", "price": 50, "veg": true }
     ]
-  }
+  },
+{
+  "id": 5,
+  "name": "Burger Hub",
+  "cuisine": "American",
+  "rating": 4.2,
+  "deliveryTime": 22,
+  "menu": [
+    { "itemId": 501, "name": "Classic Cheeseburger", "price": 199, "veg": false },
+    { "itemId": 502, "name": "Veggie Burger", "price": 169, "veg": true },
+    { "itemId": 503, "name": "French Fries", "price": 99, "veg": true }
+  ]
+}
 ]
