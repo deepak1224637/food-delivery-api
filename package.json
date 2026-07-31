@@ -1,0 +1,14 @@
+{
+  "name": "food-delivery-api",
+  "version": "1.0.0",
+  "description": "Zomato/Swiggy-style Food Delivery API for Postman practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3"
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "restaurantId": 2,
+    "items": [
+      {
+        "itemId": 201,
+        "quantity": 2,
+        "price": 249,
+        "name": "Margherita Pizza"
+      }
+    ],
+    "total": 498,
+    "status": "preparing",
+    "createdAt": "2026-07-31T07:04:59.992Z"
+  }
+]

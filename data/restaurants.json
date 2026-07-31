@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Punjabi Tadka",
+    "cuisine": "North Indian",
+    "rating": 4.3,
+    "deliveryTime": 35,
+    "menu": [
+      { "itemId": 101, "name": "Butter Chicken", "price": 320, "veg": false },
+      { "itemId": 102, "name": "Paneer Tikka", "price": 260, "veg": true },
+      { "itemId": 103, "name": "Dal Makhani", "price": 220, "veg": true },
+      { "itemId": 104, "name": "Garlic Naan", "price": 60, "veg": true }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pizza Planet",
+    "cuisine": "Italian",
+    "rating": 4.1,
+    "deliveryTime": 25,
+    "menu": [
+      { "itemId": 201, "name": "Margherita Pizza", "price": 249, "veg": true },
+      { "itemId": 202, "name": "Pepperoni Pizza", "price": 349, "veg": false },
+      { "itemId": 203, "name": "Garlic Bread", "price": 129, "veg": true }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dragon Wok",
+    "cuisine": "Chinese",
+    "rating": 4.0,
+    "deliveryTime": 30,
+    "menu": [
+      { "itemId": 301, "name": "Veg Hakka Noodles", "price": 180, "veg": true },
+      { "itemId": 302, "name": "Chicken Manchurian", "price": 240, "veg": false },
+      { "itemId": 303, "name": "Spring Rolls", "price": 150, "veg": true }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "South Spice",
+    "cuisine": "South Indian",
+    "rating": 4.5,
+    "deliveryTime": 20,
+    "menu": [
+      { "itemId": 401, "name": "Masala Dosa", "price": 130, "veg": true },
+      { "itemId": 402, "name": "Idli Sambar", "price": 90, "veg": true },
+      { "itemId": 403, "name": "Filter Coffee", "price": 50, "veg": true }
+    ]
+  }
+]
