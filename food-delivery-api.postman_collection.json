@@ -420,7 +420,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -464,7 +464,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -508,7 +508,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -551,7 +551,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -595,7 +595,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -631,7 +631,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -674,7 +674,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -718,7 +718,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -761,7 +761,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -795,7 +795,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -829,7 +829,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -864,7 +864,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]
@@ -909,7 +909,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xwi}}",
+              "value": "{{token}}",
               "type": "string"
             }
           ]

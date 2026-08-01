@@ -62,5 +62,37 @@
     "total": 498,
     "status": "placed",
     "createdAt": "2026-08-01T07:26:34.321Z"
+  },
+  {
+    "id": 5,
+    "userId": 1,
+    "restaurantId": 2,
+    "items": [
+      {
+        "itemId": 201,
+        "quantity": 2,
+        "price": 249,
+        "name": "Margherita Pizza"
+      }
+    ],
+    "total": 498,
+    "status": "placed",
+    "createdAt": "2026-08-01T08:15:25.330Z"
+  },
+  {
+    "id": 6,
+    "userId": 1,
+    "restaurantId": 2,
+    "items": [
+      {
+        "itemId": 201,
+        "quantity": 2,
+        "price": 249,
+        "name": "Margherita Pizza"
+      }
+    ],
+    "total": 498,
+    "status": "placed",
+    "createdAt": "2026-08-01T08:16:57.389Z"
   }
 ]
