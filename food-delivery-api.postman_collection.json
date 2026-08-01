@@ -7,7 +7,7 @@
   },
   "item": [
     {
-      "name": "New Request",
+      "name": "{{baseUrl}}/restaurants",
       "request": {
         "method": "GET",
         "header": [
@@ -26,12 +26,12 @@
             "restaurants"
           ]
         },
-        "description": "StartFragment🧪 Test 1: Restaurants (No Login Required)EndFragment"
+        "description": "StartFragment🧪 Test 1: Get All RestaurantsEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
+      "name": "{{baseUrl}}/restaurants/?cuisine=Chinese",
       "request": {
         "auth": {
           "type": "noauth"
@@ -45,12 +45,13 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/restaurants?cuisine=Chinese",
+          "raw": "{{baseUrl}}/restaurants/?cuisine=Chinese",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
-            "restaurants"
+            "restaurants",
+            ""
           ],
           "query": [
             {
@@ -59,12 +60,12 @@
             }
           ]
         },
-        "description": "Test 1.2 — Cuisine Filter\n\n**filtering restaurants by their food type/category** (like North Indian, Chinese, Italian, South Indian)"
+        "description": "StartFragment🧪 Test 2: Cuisine FilterEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
+      "name": "{{baseUrl}}/restaurants/?minRating=4.3",
       "request": {
         "auth": {
           "type": "noauth"
@@ -78,61 +79,74 @@
           }
         ],
         "url": {
-          "raw": "{{baseUrl}}/restaurants?minRating=4.3",
+          "raw": "{{baseUrl}}/restaurants/?minRating=4.3",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
-            "restaurants"
+            "restaurants",
+            ""
           ],
           "query": [
             {
               "key": "minRating",
               "value": "4.3",
-              "description": "Minimum Rating Filter"
+              "type": "text"
             }
           ]
-        },
-        "description": "StartFragment🧪 Test 1.3 — Minimum Rating FilterEndFragment"
+        }
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
+      "name": "{{baseUrl}}/restaurants/?search=pizza",
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
-          "raw": "{{baseUrl}}/restaurants?search=pizza",
+          "raw": "{{baseUrl}}/restaurants/?search=pizza",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
-            "restaurants"
+            "restaurants",
+            ""
           ],
           "query": [
             {
               "key": "search",
               "value": "pizza",
-              "description": "search pizza"
+              "type": "text"
             }
           ]
         },
-        "description": "🧪 Test 1.4 — Search by Name"
+        "description": "StartFragment🧪 Test 4: Search FilterEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/1",
+      "name": "{{baseUrl}}/restaurants/1",
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "ture",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/restaurants/1",
           "host": [
@@ -143,18 +157,24 @@
             "1"
           ]
         },
-        "description": "🧪 Test 1.5 — Get Single Restaurant with Full Menu"
+        "description": "StartFragment🧪 Test 5: Single Restaurant with MenuEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/99",
+      "name": "{{baseUrl}}/restaurants/99",
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "ture",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/restaurants/99",
           "host": [
@@ -165,18 +185,24 @@
             "99"
           ]
         },
-        "description": "🧪 Test 1.6 — Invalid Restaurant ID (Negative Test)"
+        "description": "StartFragment🧪 Test 6: Invalid Restaurant ID (Negative Test)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants/2/menu",
+      "name": "{{baseUrl}}/restaurants/2/menu",
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/restaurants/2/menu",
           "host": [
@@ -188,12 +214,12 @@
             "menu"
           ]
         },
-        "description": "🧪 Test 2: Menu Endpoint"
+        "description": "StartFragment🧪 Test 7: Get Menu for a RestaurantEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/auth/register",
+      "name": "{{baseUrl}}/auth/register",
       "request": {
         "auth": {
           "type": "noauth"
@@ -208,7 +234,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"name\": \"Amit\",\r\n  \"email\": \"amit@food.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "raw": "{\r\n  \"name\": \"Amit\",\r\n  \"email\": \"amit2@food.com\",\r\n  \"password\": \"123456\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -225,18 +251,38 @@
             "register"
           ]
         },
-        "description": "🧪 Test 3: Auth (Register & Login)  \n  \nTest 3.1 — Register a New User"
+        "description": "StartFragment🧪 Test 8: Register New UserEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/auth/login",
+      "name": "{{baseUrl}}/auth/login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonData = pm.response.json();\r",
+              "pm.environment.set(\"token\", jsonData.token);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n  \"email\": \"amit@food.com\",\r\n  \"password\": \"123456\"\r\n}",
@@ -256,12 +302,12 @@
             "login"
           ]
         },
-        "description": "🧪 Test 3.2 — Login"
+        "description": "StartFragment🧪 Test 9: Login (Token Generate Karega)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/auth/register",
+      "name": "{{baseUrl}}/auth/register Duplicate Email Register",
       "request": {
         "auth": {
           "type": "noauth"
@@ -276,7 +322,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n     \"name\": \"Amit\",\r\n     \"email\": \"amit@food.com\",\r\n     \"password\": \"123456\"\r\n   }",
+          "raw": "{\r\n  \"name\": \"Amit\",\r\n  \"email\": \"amit2@food.com\",\r\n  \"password\": \"123456\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -293,12 +339,12 @@
             "register"
           ]
         },
-        "description": "StartFragment🧪 Test 3.3 — Duplicate Email Register (Negative Test)EndFragment"
+        "description": "StartFragment🧪 Test 10: Duplicate Email RegisterEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/auth/login",
+      "name": "{{baseUrl}}/auth/login  Wrong Password Login",
       "request": {
         "auth": {
           "type": "noauth"
@@ -313,12 +359,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"email\": \"amit@food.com\",\r\n  \"password\": \"wrongpassword\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
+          "raw": "{\r\n  \"email\": \"amit@food.com\",\r\n  \"password\": \"wrongpasswoard\"\r\n}"
         },
         "url": {
           "raw": "{{baseUrl}}/auth/login",
@@ -330,12 +371,12 @@
             "login"
           ]
         },
-        "description": "🧪 Test 3.4 — Wrong Password Login (Negative Test)"
+        "description": "StartFragment🧪 Test 11: Wrong Password LoginEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
+      "name": "{{baseUrl}}/cart/add_Add to Cart WITHOUT Token (Negative Test)",
       "request": {
         "auth": {
           "type": "noauth"
@@ -367,19 +408,19 @@
             "add"
           ]
         },
-        "description": "StartFragment\n\n### 🧪 Test 4: Cart (Login Required)\n\n#### Test 4.1 — Add to Cart Without Token (Negative Test)\n\nEndFragment"
+        "description": "StartFragment🧪 Test 12: Add to Cart WITHOUT Token (Negative Test)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
+      "name": "{{baseUrl}}/cart/add_ Add to Cart WITH Token",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{supabase_service_role_api_key_0xwi}}",
               "type": "string"
             }
           ]
@@ -394,7 +435,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"restaurantId\": 1,\r\n  \"itemId\": 101,\r\n  \"quantity\": 3\r\n}",
+          "raw": "{\r\n  \"restaurantId\": 1,\r\n  \"itemId\": 101,\r\n  \"quantity\": 2\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -411,25 +452,31 @@
             "add"
           ]
         },
-        "description": "🧪 Test 4.2 — Add Item to Cart (with valid token)"
+        "description": "StartFragment🧪 Test 13: Add to Cart WITH TokenEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
+      "name": "{{baseUrl}}/cart/add_Different Restaurant Se Add Karne Ki Koshish (Negative Test)",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xkz}}",
+              "value": "{{auth_secret_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n  \"restaurantId\": 2,\r\n  \"itemId\": 201,\r\n  \"quantity\": 1\r\n}",
@@ -440,37 +487,40 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/add",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
             "add"
           ]
         },
-        "description": "StartFragment🧪 Test 4.3 — Try Adding Item from a Different Restaurant (Negative Test)EndFragment"
+        "description": "StartFragment🧪 Test 14: Different Restaurant Se Add Karne Ki Koshish (Negative Test)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
+      "name": "{{baseUrl}}/cart/add Same Item Add  again(Quantity Merge)",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xkz}}",
+              "value": "{{json_web_token_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n  \"restaurantId\": 1,\r\n  \"itemId\": 101,\r\n  \"quantity\": 1\r\n}",
@@ -489,20 +539,19 @@
             "cart",
             "add"
           ]
-        },
-        "description": "StartFragment🧪 Test 4.4 — Add Same Item Again (Quantity Merge Check)EndFragment"
+        }
       },
       "response": []
     },
     {
-      "name": " https://crept-skincare-uncoated.ngrok-free.dev/cart/update",
+      "name": "{{baseUrl}}/cart/update_  Update Quantity",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{json_web_token_0xwi}}",
               "type": "string"
             }
           ]
@@ -534,32 +583,35 @@
             "update"
           ]
         },
-        "description": "StartFragment🧪 Test 4.5 — Update Quantity (PATCH)EndFragment"
+        "description": "StartFragment🧪 Test 16: Update Quantity (PATCH)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/remove/101",
+      "name": "{{baseUrl}}/cart/remove/101",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{auth_secret_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "DELETE",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/cart/remove/101",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/cart/remove/101",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "cart",
@@ -567,25 +619,31 @@
             "101"
           ]
         },
-        "description": "StartFragment🧪 Test 4.6 — Remove Item from Cart (DELETE)EndFragment"
+        "description": "StartFragment🧪 Test 17: Remove Item from Cart (DELETE)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
+      "name": "{{baseUrl}}/orders  Checkout with Empty Cart (Negative Test)",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xkz}}",
+              "value": "{{auth_secret_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "",
@@ -596,36 +654,39 @@
           }
         },
         "url": {
-          "raw": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
-          "protocol": "https",
+          "raw": "{{baseUrl}}/orders",
           "host": [
-            "crept-skincare-uncoated",
-            "ngrok-free",
-            "dev"
+            "{{baseUrl}}"
           ],
           "path": [
             "orders"
           ]
         },
-        "description": "StartFragmentTest 5.1 — Checkout with Empty Cart (Negative Test)EndFragment"
+        "description": "StartFragment🧪 Test 18: Checkout with Empty Cart (Negative Test)EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart/add",
+      "name": "{{baseUrl}}/cart/add_item add in cart for order",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{supabase_service_role_api_key_0xkz}}",
+              "value": "{{auth_secret_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "{\r\n  \"restaurantId\": 2,\r\n  \"itemId\": 201,\r\n  \"quantity\": 2\r\n}",
@@ -645,25 +706,31 @@
             "add"
           ]
         },
-        "description": "StartFragment\n\n### 🧪 Test 5.2 — add to cart done 5.3 checkout\n\n**First, add an item back to the cart:**\n\nEndFragment"
+        "description": "StartFragment🧪 Test 19: Successful CheckoutEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
+      "name": "{{baseUrl}}/orders_placed done",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{json_web_token_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "POST",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
           "raw": "",
@@ -682,25 +749,31 @@
             "orders"
           ]
         },
-        "description": "Then checkout and order create done"
+        "description": "StartFragmentCheckout karo:EndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/cart",
+      "name": "{{baseUrl}}/cart  Cart Cleared After Checkout",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{supabase_service_role_api_key_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/cart",
           "host": [
@@ -710,25 +783,31 @@
             "cart"
           ]
         },
-        "description": "StartFragment🧪 Test 5.3 — Cart Cleared After CheckoutEndFragment"
+        "description": "StartFragment🧪 Test 20: Cart Cleared After CheckoutEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders",
+      "name": "{{baseUrl}}/orders  History",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0xkz}}",
+              "value": "{{supabase_service_role_api_key_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/orders",
           "host": [
@@ -738,25 +817,31 @@
             "orders"
           ]
         },
-        "description": "StartFragment🧪 Test 5.4 — Order HistoryEndFragment"
+        "description": "StartFragment🧪 Test 21: Order HistoryEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1",
+      "name": "{{baseUrl}}/orders/1_  Single Order Detail",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{json_web_token_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/orders/1",
           "host": [
@@ -767,28 +852,34 @@
             "1"
           ]
         },
-        "description": "StartFragment🧪 Test 5.5 — Single Order DetailEndFragment"
+        "description": "StartFragment🧪 Test 22: Single Order DetailEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1/status",
+      "name": "{{baseUrl}}/orders/1/status",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
+              "value": "{{json_web_token_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "PATCH",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"status\": \"preparing\"\r\n}",
+          "raw": "{\r\n  \"status\": \"flyin\"\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -806,64 +897,31 @@
             "status"
           ]
         },
-        "description": "🧪 Test 5.6 — Update Order Status (New Feature — special to this API)"
+        "description": "StartFragment🧪 Test 23: Update Order StatusEndFragment"
       },
       "response": []
     },
     {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders/1/status",
+      "name": "{{baseUrl}}/orders/999_  Access Non-Existent Order (Security Test)",
       "request": {
         "auth": {
           "type": "bearer",
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0xkz}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "PATCH",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"status\": \"flying\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "{{baseUrl}}/orders/1/status",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "orders",
-            "1",
-            "status"
-          ]
-        },
-        "description": "StartFragment🧪 Test 5.7 — Invalid Status Value (Negative Test)EndFragment"
-      },
-      "response": []
-    },
-    {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/orders/999",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{json_web_token_0xkz}}",
+              "value": "{{supabase_service_role_api_key_0xwi}}",
               "type": "string"
             }
           ]
         },
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "ngrok-skip-browser-warning",
+            "value": "true",
+            "type": "text"
+          }
+        ],
         "url": {
           "raw": "{{baseUrl}}/orders/999",
           "host": [
@@ -874,41 +932,7 @@
             "999"
           ]
         },
-        "description": "StartFragment🧪 Test 5.8 — Access Non-Existent Order (Security Test)EndFragment"
-      },
-      "response": []
-    },
-    {
-      "name": "{{baseUrl}}/restaurants/",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "auth": {
-          "type": "noauth"
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "ngrok-skip-browser-warning",
-            "value": "true",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": {
-          "raw": "{{baseUrl}}/restaurants/",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "restaurants",
-            ""
-          ]
-        }
+        "description": "StartFragment🧪 Test 25: Access Non-Existent Order (Security Test)EndFragment"
       },
       "response": []
     }
@@ -952,6 +976,18 @@
     },
     {
       "key": "json_web_token_0xkz",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_0xwi",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0xwi",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_0xwi",
       "secret": true
     }
   ]

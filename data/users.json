@@ -10,5 +10,11 @@
     "name": "Rahul",
     "email": "rahul@test.com",
     "password": "$2a$08$sw4xH5nqz4nFy9BREJ2SwO3Av/ubTyJfZzNUfKWe9uaMkV9UqdMg6"
+  },
+  {
+    "id": 3,
+    "name": "Amit",
+    "email": "amit2@food.com",
+    "password": "$2a$08$3Q8kwGBaIlVt5y.GyEDPuO8BuQhCs2Es8kzKJVykN6hNVk1gaDOqm"
   }
 ]
