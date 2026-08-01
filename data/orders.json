@@ -30,5 +30,21 @@
     "total": 498,
     "status": "placed",
     "createdAt": "2026-07-31T12:14:12.648Z"
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "restaurantId": 2,
+    "items": [
+      {
+        "itemId": 201,
+        "quantity": 2,
+        "price": 249,
+        "name": "Margherita Pizza"
+      }
+    ],
+    "total": 498,
+    "status": "placed",
+    "createdAt": "2026-08-01T05:49:15.406Z"
   }
 ]

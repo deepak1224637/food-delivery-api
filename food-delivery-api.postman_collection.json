@@ -379,7 +379,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -394,7 +394,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"restaurantId\": 1,\r\n  \"itemId\": 101,\r\n  \"quantity\": 2\r\n}",
+          "raw": "{\r\n  \"restaurantId\": 1,\r\n  \"itemId\": 101,\r\n  \"quantity\": 3\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -423,7 +423,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{json_web_token_0oln}}",
+              "value": "{{supabase_service_role_api_key_0xkz}}",
               "type": "string"
             }
           ]
@@ -464,7 +464,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{supabase_service_role_api_key_0xkz}}",
               "type": "string"
             }
           ]
@@ -502,7 +502,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -546,7 +546,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -579,7 +579,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{supabase_service_role_api_key_0xkz}}",
               "type": "string"
             }
           ]
@@ -619,7 +619,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{supabase_service_role_api_key_0xkz}}",
               "type": "string"
             }
           ]
@@ -657,7 +657,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -694,7 +694,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -722,7 +722,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{json_web_token_0xkz}}",
               "type": "string"
             }
           ]
@@ -750,7 +750,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -779,7 +779,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -818,7 +818,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{auth_secret_0xkz}}",
               "type": "string"
             }
           ]
@@ -857,7 +857,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "{{auth_secret_0g9o}}",
+              "value": "{{json_web_token_0xkz}}",
               "type": "string"
             }
           ]
@@ -879,50 +879,10 @@
       "response": []
     },
     {
-      "name": "{{baseUrl}}/restaurants",
-      "request": {
-        "auth": {
-          "type": "noauth"
-        },
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{baseUrl}}/restaurants",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "restaurants"
-          ]
-        }
+      "name": "{{baseUrl}}/restaurants/",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
       },
-      "response": []
-    },
-    {
-      "name": "New Request",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "ngrok-skip-browser-warning",
-            "value": "true",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "{{baseUrl}}/restaurants",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "restaurants"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "https://crept-skincare-uncoated.ngrok-free.dev/restaurants",
       "request": {
         "auth": {
           "type": "noauth"
@@ -935,19 +895,18 @@
             "type": "text"
           }
         ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
         "url": {
-          "raw": "{{baseUrl}}/restaurants?cuisine=Chinese",
+          "raw": "{{baseUrl}}/restaurants/",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
-            "restaurants"
-          ],
-          "query": [
-            {
-              "key": "cuisine",
-              "value": "Chinese"
-            }
+            "restaurants",
+            ""
           ]
         }
       },
@@ -981,6 +940,18 @@
     },
     {
       "key": "auth_secret_0g9o",
+      "secret": true
+    },
+    {
+      "key": "supabase_service_role_api_key_0xkz",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0xkz",
+      "secret": true
+    },
+    {
+      "key": "json_web_token_0xkz",
       "secret": true
     }
   ]

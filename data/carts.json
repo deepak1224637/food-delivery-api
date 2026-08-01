@@ -1,7 +1,14 @@
 [
   {
     "userId": 1,
-    "restaurantId": null,
-    "items": []
+    "restaurantId": 1,
+    "items": [
+      {
+        "itemId": 101,
+        "quantity": 3,
+        "price": 320,
+        "name": "Butter Chicken"
+      }
+    ]
   }
 ]
